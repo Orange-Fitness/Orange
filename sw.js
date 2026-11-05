@@ -3,9 +3,9 @@
 // opens with no network (including after a full close), and keep the old version
 // until the user taps "Update" (no surprise reloads mid-workout).
 
-const VERSION = "8.5.3-88f3c8e21e";
+const VERSION = "8.6.0-6b6cfb9e55";
 const CACHE = `orange-${VERSION}`;
-const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/app-88f3c8e21e.js","./assets/app-79c3fe1899.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
+const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/app-617989e881.js","./assets/app-12208b65e6.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
