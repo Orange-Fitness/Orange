@@ -7,16 +7,22 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <script>
+    // iPhone home-screen app: black-translucent draws white status-bar text over the page, which is
+    // unreadable on Paper's light background. iOS reads this tag at launch, so pick it before anything
+    // renders (a change of interface applies from the next launch).
+    try { if (localStorage.getItem("orange_ui") === "paper") document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').setAttribute("content", "default"); } catch (e) {}
+  </script>
   <meta name="apple-mobile-web-app-title" content="Orange" />
   <title>Orange</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
-  <link rel="stylesheet" href="assets/app-4b99891fc5.css" />
-  <script defer src="assets/app-59dd78e76d.js"></script>
+  <link rel="stylesheet" href="assets/app-15008d6b63.css" />
+  <script type="module" src="assets/app-JI2JBPTW.js"></script>
 </head>
 <body>
-  <!-- build 9.0.2 -->
+  <!-- build 9.1.0 -->
   <div id="root"></div>
   <noscript>Orange needs JavaScript.</noscript>
 </body>
