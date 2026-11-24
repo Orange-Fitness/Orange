@@ -3,9 +3,9 @@
 // opens with no network (including after a full close), and keep the old version
 // until the user taps "Update" (no surprise reloads mid-workout).
 
-const VERSION = "9.3.1-e8f04c745c";
+const VERSION = "9.4.0-2ae7cf9d35";
 const CACHE = `orange-${VERSION}`;
-const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/chunk-HD3XCAJD.js","./assets/app-FLQWCJ6G.js","./assets/chunk-GNIG66G4.js","./assets/chunk-ANAHYFCU.js","./assets/chunk-LPR52RWV.js","./assets/chunk-C3STJDPF.js","./assets/chunk-Y3JEDNMN.js","./assets/chunk-QKRGMWSL.js","./assets/chunk-VTVPXZMJ.js","./assets/chunk-EA32222I.js","./assets/chunk-LABFNTAB.js","./assets/chunk-ECMZDBZ6.js","./assets/chunk-HCMLFDPO.js","./assets/chunk-QONEPKE2.js","./assets/chunk-ZUSNC2GM.js","./assets/chunk-M6DHKKKE.js","./assets/chunk-BGWHA2LW.js","./assets/chunk-KPALE5MF.js","./assets/chunk-DFZR4KDX.js","./assets/chunk-KMCNVD3S.js","./assets/chunk-TZNW3NHU.js","./assets/chunk-UYSGVHC6.js","./assets/chunk-IOFQOMLO.js","./assets/chunk-PSJTZQQ3.js","./assets/chunk-FALGZFER.js","./assets/chunk-3OXTFYNH.js","./assets/chunk-VXWUGC7F.js","./assets/app-bf34e512a0.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
+const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/chunk-HD3XCAJD.js","./assets/app-ZL5DA3HI.js","./assets/chunk-GNIG66G4.js","./assets/chunk-ANAHYFCU.js","./assets/chunk-LPR52RWV.js","./assets/chunk-PZMJ3HDC.js","./assets/chunk-Y3JEDNMN.js","./assets/chunk-QKRGMWSL.js","./assets/chunk-VTVPXZMJ.js","./assets/chunk-EA32222I.js","./assets/chunk-KN4XFBEF.js","./assets/chunk-ECMZDBZ6.js","./assets/chunk-HCMLFDPO.js","./assets/chunk-GDK2IYWT.js","./assets/chunk-ZUSNC2GM.js","./assets/chunk-M6DHKKKE.js","./assets/chunk-2VS72V36.js","./assets/chunk-DIW76EO7.js","./assets/chunk-DFZR4KDX.js","./assets/chunk-KMCNVD3S.js","./assets/chunk-TZNW3NHU.js","./assets/chunk-UYSGVHC6.js","./assets/chunk-IOFQOMLO.js","./assets/chunk-PSJTZQQ3.js","./assets/chunk-FALGZFER.js","./assets/chunk-3OXTFYNH.js","./assets/chunk-VXWUGC7F.js","./assets/app-118b4f3815.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
