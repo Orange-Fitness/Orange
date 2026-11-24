@@ -1,0 +1,1 @@
+var n=e=>String(e).padStart(2,"0");function u(e,{time:a=!0}={}){let t=e?new Date(e):null;if(!t||Number.isNaN(t.getTime()))return"";let r=`${n(t.getDate())}/${n(t.getMonth()+1)}/${t.getFullYear()}`;return a?`${r} ${n(t.getHours())}:${n(t.getMinutes())}`:r}export{u as a};

@@ -3,9 +3,9 @@
 // opens with no network (including after a full close), and keep the old version
 // until the user taps "Update" (no surprise reloads mid-workout).
 
-const VERSION = "9.2.2-45080b117d";
+const VERSION = "9.3.0-96bb6ccf40";
 const CACHE = `orange-${VERSION}`;
-const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/app-FZ6454DF.js","./assets/app-15008d6b63.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
+const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/chunk-HD3XCAJD.js","./assets/app-3ID3J6CD.js","./assets/chunk-GNIG66G4.js","./assets/chunk-ANAHYFCU.js","./assets/chunk-LPR52RWV.js","./assets/chunk-C3STJDPF.js","./assets/chunk-Y3JEDNMN.js","./assets/chunk-QKRGMWSL.js","./assets/chunk-VTVPXZMJ.js","./assets/chunk-EA32222I.js","./assets/chunk-LABFNTAB.js","./assets/chunk-ECMZDBZ6.js","./assets/chunk-HCMLFDPO.js","./assets/chunk-QONEPKE2.js","./assets/chunk-ZUSNC2GM.js","./assets/chunk-M6DHKKKE.js","./assets/chunk-BGWHA2LW.js","./assets/chunk-KPALE5MF.js","./assets/chunk-DFZR4KDX.js","./assets/chunk-KMCNVD3S.js","./assets/chunk-TZNW3NHU.js","./assets/chunk-UYSGVHC6.js","./assets/chunk-IOFQOMLO.js","./assets/chunk-PSJTZQQ3.js","./assets/chunk-FALGZFER.js","./assets/chunk-3OXTFYNH.js","./assets/chunk-VXWUGC7F.js","./assets/app-817cac4146.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
