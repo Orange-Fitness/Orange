@@ -1,13 +1,13 @@
 {
-  "name": "Orange",
-  "short_name": "Orange",
+  "name": "SinSet",
+  "short_name": "SinSet",
   "description": "Personal hypertrophy training log",
   "id": "/orange-app",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0b0907",
-  "theme_color": "#0b0907",
+  "background_color": "#07080d",
+  "theme_color": "#07080d",
   "icons": [
     {
       "src": "icons/icon-192.png",

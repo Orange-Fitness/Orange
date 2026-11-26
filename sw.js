@@ -1,11 +1,11 @@
-// Orange service worker. Generated at build time: VERSION and PRECACHE are filled in.
+// SinSet service worker. Generated at build time: VERSION and PRECACHE are filled in.
 // Strategy: precache the whole app shell on install, serve it cache-first so the app
 // opens with no network (including after a full close), and keep the old version
 // until the user taps "Update" (no surprise reloads mid-workout).
 
-const VERSION = "9.5.0-6634a0d690";
+const VERSION = "10.0.0-aaf7c0f851";
 const CACHE = `orange-${VERSION}`;
-const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/chunk-Q2NS3FC6.js","./assets/app-YBH3BAB6.js","./assets/chunk-L5ZLEO6W.js","./assets/chunk-GKPRLYK6.js","./assets/chunk-WVJLDH2P.js","./assets/chunk-4TCGKTQE.js","./assets/chunk-Y3JEDNMN.js","./assets/chunk-XE5ZAK2F.js","./assets/chunk-ZNBYQWCE.js","./assets/chunk-6Z4HDBDY.js","./assets/chunk-PDJOHYPW.js","./assets/chunk-4JOY4MID.js","./assets/chunk-SZSN3RJH.js","./assets/chunk-QPUQ7EGD.js","./assets/chunk-NIOGMWPG.js","./assets/chunk-EHUA57NI.js","./assets/chunk-M7L5NHLV.js","./assets/chunk-UM52MFLJ.js","./assets/chunk-SYXLM3XQ.js","./assets/chunk-P6HUR6GT.js","./assets/chunk-TZNW3NHU.js","./assets/chunk-UYSGVHC6.js","./assets/chunk-JPNRCCRL.js","./assets/chunk-SXYRYXH2.js","./assets/chunk-T5L4ZSJH.js","./assets/chunk-EJTTMDQ3.js","./assets/chunk-T3LZ3HX2.js","./assets/app-a65220e1dd.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
+const PRECACHE = ["./","./index.html","./manifest.webmanifest","./assets/chunk-JGRQ5JAR.js","./assets/app-QM3IBLAJ.js","./assets/chunk-6GAOBSTV.js","./assets/chunk-EQKENKM3.js","./assets/chunk-UQMLA2MZ.js","./assets/chunk-AEM4MZ47.js","./assets/chunk-Y3JEDNMN.js","./assets/chunk-XE5ZAK2F.js","./assets/chunk-WM4APR7L.js","./assets/chunk-6Z4HDBDY.js","./assets/chunk-GEGHBE2B.js","./assets/chunk-5GCEMX6C.js","./assets/chunk-CVUVWFTJ.js","./assets/chunk-QPUQ7EGD.js","./assets/chunk-KV5NN3MF.js","./assets/chunk-EHUA57NI.js","./assets/chunk-SHHJYKL2.js","./assets/chunk-2H55PEBZ.js","./assets/chunk-LUHR2NBI.js","./assets/chunk-UGNDC5QT.js","./assets/chunk-TZNW3NHU.js","./assets/chunk-UYSGVHC6.js","./assets/chunk-JPNRCCRL.js","./assets/chunk-MFYUHNWD.js","./assets/chunk-T5L4ZSJH.js","./assets/chunk-EJTTMDQ3.js","./assets/chunk-T3LZ3HX2.js","./assets/app-f28f7f95b3.css","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-512.png","./icons/apple-touch-icon.png","./fonts/orange-pixel.woff"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -29,7 +29,7 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// A schedule shared to Orange (Android share sheet): keep the file for the page, then open the app.
+// A schedule shared to SinSet (Android share sheet): keep the file for the page, then open the app.
 const SHARE_CACHE = "orange-share";
 self.addEventListener("fetch", (event) => {
   const req = event.request;
@@ -82,7 +82,7 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
-// Tapping the "rest over" notification brings Orange back to the front.
+// Tapping the "rest over" notification brings SinSet back to the front.
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
   event.waitUntil(
